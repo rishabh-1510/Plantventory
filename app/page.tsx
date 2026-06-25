@@ -9,6 +9,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/55"/>
         {/* gradient */}
         <div className="absolute inset-0 bg-linear-to-r from-slate-950/80 via-slate-900/50 to-transparent"/> 
+      
       </section>
     </FrontendLayout>
   );
