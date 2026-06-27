@@ -12,14 +12,17 @@ export const Footer = () => {
                         Estates
                     </span>
                 </Link>
-                <div className="hidden items-center gap-8 lg:flex">
+                <div className="items-center gap-8 flex">
                     {navLinks.map((item) => (
                         <Link key={item} href={item == "Home" ? "/" : `${item.toLowerCase()}`} className={`text-sm font-medium transition hover:text-primary
-                            text-white/70`}>
+                            text-text/70`}>
                             {item}
                         </Link>
                     ))}
                 </div>
+                <p className='text-sm text-text/60'>
+                    &copy; 2026 NextEstate
+                </p>
             </div>
         </footer>
     )
