@@ -1,11 +1,14 @@
+import { Footer } from "./components/footer/Footer";
+import { RecentProperties } from "./components/home/RecentProperties";
 import { SearchBox } from "./components/home/SearchBox";
 import FrontendLayout from "./components/layouts/FrontendLayout";
 import { Navbar } from "./components/navbar/Navbar";
+
 export default function Home() {
   return (
     <FrontendLayout>
-      <Navbar />
-      <section className="relative flex min-h-screen items-center overflow-hidden bg-[url('/data/hero.jpg')] bg-cover bg-center
+      <Navbar/>
+      <section className="relative flex min-h-screen items-center overflow-hidden bg-[url('/images/hero.jpg')] bg-cover bg-center
       pt-32 lg:pt-36 py-2">
         {/* overlay */}
         <div className="absolute inset-0 bg-black/55" />
@@ -37,6 +40,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <RecentProperties></RecentProperties>
     </FrontendLayout>
   );
 }
