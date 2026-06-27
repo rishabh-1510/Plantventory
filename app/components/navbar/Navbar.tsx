@@ -34,7 +34,7 @@ export const Navbar = ({ variant = "transparent" }: NavbarProps) => {
                     <div className="hidden items-center gap-8 lg:flex">
                         {navLinks.map((item) => (
                             <Link key={item} href={item == "Home" ? "/" : `${item.toLowerCase()}`} className={`text-sm font-medium transition hover:text-primary
-                            ${isTranparent ? `text-white/80` : `text-white/70`}`}>
+                            ${isTranparent ? `text-white/80` : `text-text/70`}`}>
                                 {item}
                             </Link>
                         ))}
