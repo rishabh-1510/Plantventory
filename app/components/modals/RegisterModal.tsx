@@ -1,0 +1,16 @@
+"use client"
+import { useAuthModal } from "@/app/store/useAuthModalStore"
+import Modal from "./Modal"
+
+const RegisterModal = () => {
+    const {openLogin , isRegisterOpen ,closeRegister} = useAuthModal();
+  return (
+    <Modal title="Register" onClose={closeRegister} isOpen={isRegisterOpen}>
+        <p>
+            Register Modal
+        </p>
+    </Modal>
+  )
+}
+
+export default RegisterModal
