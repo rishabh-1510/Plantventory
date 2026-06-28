@@ -14,7 +14,7 @@ interface InputValues {
 
 
 const EmailForm = () => {
-    const [values, setValues] = useState({
+    const [values, setValues] = useState<InputValues>({
         email: "",
         name: "",
         phone: "",
