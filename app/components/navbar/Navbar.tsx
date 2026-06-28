@@ -5,6 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { useAuthModal } from "@/app/store/useAuthModalStore";
 
 interface NavbarProps {
     variant: "transparent" | "Solid"
@@ -15,6 +16,7 @@ const navLinks = ["Home", "Properties", "MarketPlace"];
 export const Navbar = ({ variant = "transparent" }: NavbarProps) => {
     const isTranparent = variant === "transparent";
     const [isOpen, setIsOpen] = useState(false);
+    const {openLogin} = useAuthModal();
     return (
         <section className={`top-0 left-0 z-50 w-full 
         ${isTranparent ? `absolute` : `sticky border-b border-black/5 bg-card`}`}>
@@ -41,7 +43,7 @@ export const Navbar = ({ variant = "transparent" }: NavbarProps) => {
                     </div>
                     {/* Desktop Buttons */}
                     <div className="hidden lg:flex items-center gap-4 ">
-                        <Button variant="outline">
+                        <Button variant="outline" onClick={openLogin}>
                             Login
                         </Button>
                         <Button icon={<FaHome />} iconPosition="right" variant="outline">
@@ -74,7 +76,7 @@ export const Navbar = ({ variant = "transparent" }: NavbarProps) => {
                                 </Link>
                             ))}
                             <div className="flex flex-col gap-3 mt-4 ">
-                                <Button variant="outline">
+                                <Button variant="outline" onClick={openLogin}>
                                     Login
                                 </Button>
                                 <Button icon={<FaHome />} iconPosition="right" variant="outline">

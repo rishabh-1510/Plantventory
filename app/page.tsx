@@ -7,7 +7,7 @@ import { Navbar } from "./components/navbar/Navbar";
 export default function Home() {
   return (
     <FrontendLayout>
-      <Navbar/>
+      <Navbar variant='transparent'/>
       <section className="relative flex min-h-screen items-center overflow-hidden bg-[url('/images/hero.jpg')] bg-cover bg-center
       pt-32 lg:pt-36 py-2">
         {/* overlay */}
