@@ -65,7 +65,7 @@ const LoginModal = () => {
       <form className="space-y-8">
         <Input id="login-email" name="email" label={"Email"} value={values.email} onChange={handleChange} error={errors.email} disabled={loading} />
         <Input id="login-password" name="password" label={"Password"} value={values.password} onChange={handleChange} error={errors.password} disabled={loading} />
-        <Button type="submit" loading={loading} >
+        <Button type="submit" fullWidth loading={loading} >
           Continue
         </Button>
       </form>
@@ -81,7 +81,7 @@ const LoginModal = () => {
           </span>
         </div>
       </div>
-      <Button variant="outline" fullWidth disabled={loading} icon={<FcGoogle size={22}/>}>
+      <Button variant="outline" fullWidth disabled={loading} icon={<FcGoogle size={22} />}>
         Continue with Google
       </Button>
 
