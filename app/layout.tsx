@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import RegisterModal from "./components/modals/RegisterModal";
 import LoginModal from "./components/modals/LoginModal";
+import CreatePropertyModal from "./components/modals/CreatePropertyModal";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background">{children}
         <RegisterModal/>
         <LoginModal/>
+        <CreatePropertyModal/>
       </body>
     </html>
   );

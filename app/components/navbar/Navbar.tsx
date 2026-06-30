@@ -6,6 +6,7 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useAuthModal } from "@/app/store/useAuthModalStore";
+import { useCreatePropertyModal } from "@/app/store/useCreatePropertyModalStore";
 
 interface NavbarProps {
     variant: "transparent" | "Solid"
@@ -17,6 +18,7 @@ export const Navbar = ({ variant = "transparent" }: NavbarProps) => {
     const isTranparent = variant === "transparent";
     const [isOpen, setIsOpen] = useState(false);
     const {openLogin} = useAuthModal();
+    const {open:openCreateModal} = useCreatePropertyModal();
     return (
         <section className={`top-0 left-0 z-50 w-full 
         ${isTranparent ? `absolute` : `sticky border-b border-black/5 bg-card`}`}>
@@ -46,7 +48,7 @@ export const Navbar = ({ variant = "transparent" }: NavbarProps) => {
                         <Button variant="outline" onClick={openLogin}>
                             Login
                         </Button>
-                        <Button icon={<FaHome />} iconPosition="right" variant="outline">
+                        <Button icon={<FaHome />} iconPosition="right" variant="outline" onClick={openCreateModal}>
                             Add Property
                         </Button>
 
@@ -79,7 +81,7 @@ export const Navbar = ({ variant = "transparent" }: NavbarProps) => {
                                 <Button variant="outline" onClick={openLogin}>
                                     Login
                                 </Button>
-                                <Button icon={<FaHome />} iconPosition="right" variant="outline">
+                                <Button icon={<FaHome />} iconPosition="right" variant="outline" onClick={openCreateModal}>
                                     Add Property
                                 </Button>
                             </div>
