@@ -1,5 +1,5 @@
 "use client"
-import { useFilterModalStore } from '@/app/store/useFilterModalStore'
+import { useFilterModalStore } from '@/src/store/useFilterModalStore';
 import { Button } from '../ui/Button'
 import { HiOutlineAdjustmentsHorizontal } from 'react-icons/hi2'
 

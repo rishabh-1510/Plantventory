@@ -1,10 +1,11 @@
 "use client"
-import { useAuthModal } from "@/app/store/useAuthModalStore";
+
 import Modal from "./Modal";
 import { useState } from "react";
 import Input from "../ui/Input";
 import { Button } from "../ui/Button";
 import { FcGoogle } from "react-icons/fc";
+import { useAuthModal } from "@/src/store/useAuthModalStore";
 
 interface LoginValues {
   email: string,

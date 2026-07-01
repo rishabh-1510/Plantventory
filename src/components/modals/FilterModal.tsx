@@ -1,11 +1,13 @@
 "use client"
-import { useFilterModalStore } from "@/app/store/useFilterModalStore"
+
 import Modal from "./Modal"
 import { useState } from "react";
-import { propertyTypes } from "@/app/constants/PropertTypes";
+
 import PropertyTypeCard from "../properties/PropertyTypeCard";
 import { Button } from "../ui/Button";
 import Input from "../ui/Input";
+import { useFilterModalStore } from "@/src/store/useFilterModalStore";
+import { propertyTypes } from "@/src/constants/PropertTypes";
 const STEPS = {
     TYPE: 0,
     LOCATION: 1,

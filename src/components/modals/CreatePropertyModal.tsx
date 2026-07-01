@@ -1,13 +1,14 @@
 'use client'
-import { useCreatePropertyModal } from "@/app/store/useCreatePropertyModalStore"
 import Modal from "./Modal"
 import { useState } from "react"
 import { Button } from "../ui/Button"
-import { propertyTypes } from "@/app/constants/PropertTypes"
+
 import PropertyTypeCard from "../properties/PropertyTypeCard"
 import Input from "../ui/Input"
 import Counter from "../properties/Counter"
 import ImageUpload from "../properties/ImageUpload"
+import { useCreatePropertyModal } from "@/src/store/useCreatePropertyModalStore"
+import { propertyTypes } from "@/src/constants/PropertTypes"
 
 const STEPS = {
     TYPE: 0,

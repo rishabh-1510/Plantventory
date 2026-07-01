@@ -5,8 +5,9 @@ import { FaHome } from "react-icons/fa";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { useAuthModal } from "@/app/store/useAuthModalStore";
-import { useCreatePropertyModal } from "@/app/store/useCreatePropertyModalStore";
+import { useAuthModal } from "@/src/store/useAuthModalStore";
+import { useCreatePropertyModal } from "@/src/store/useCreatePropertyModalStore";
+
 
 interface NavbarProps {
     variant: "transparent" | "Solid"

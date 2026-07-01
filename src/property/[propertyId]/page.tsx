@@ -1,6 +1,7 @@
-import FrontendLayout from '@/app/components/layouts/FrontendLayout'
-import { Navbar } from '@/app/components/navbar/Navbar'
-import EmailForm from '@/app/components/properties/EmailForm'
+
+import FrontendLayout from '@/src/components/layouts/FrontendLayout'
+import { Navbar } from '@/src/components/navbar/Navbar'
+import EmailForm from '@/src/components/properties/EmailForm'
 import Image from 'next/image'
 import React from 'react'
 import { FaMapMarkedAlt, FaRulerCombined } from 'react-icons/fa'

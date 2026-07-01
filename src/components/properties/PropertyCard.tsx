@@ -1,4 +1,5 @@
-import { Property } from "@/app/types/property"
+
+import { Property } from "@/src/types/property"
 import Image from "next/image"
 import Link from "next/link"
 

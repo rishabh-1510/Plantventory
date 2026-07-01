@@ -1,8 +1,8 @@
-import { Footer } from "./components/footer/Footer";
-import { RecentProperties } from "./components/home/RecentProperties";
-import { SearchBox } from "./components/home/SearchBox";
-import FrontendLayout from "./components/layouts/FrontendLayout";
-import { Navbar } from "./components/navbar/Navbar";
+import { RecentProperties } from "../components/home/RecentProperties";
+import { SearchBox } from "../components/home/SearchBox";
+import FrontendLayout from "../components/layouts/FrontendLayout";
+import { Navbar } from "../components/navbar/Navbar";
+
 
 export default function Home() {
   return (
@@ -35,7 +35,7 @@ export default function Home() {
                 properties
                 in the best locations around the world.
               </p>
-              <SearchBox />
+              <SearchBox/>
             </div>
           </div>
         </div>

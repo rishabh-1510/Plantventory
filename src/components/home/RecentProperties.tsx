@@ -1,4 +1,5 @@
-import { DummyProperties } from "@/app/constants/DummyProperties"
+
+import { DummyProperties } from "@/src/constants/DummyProperties"
 import { PropertyCard } from "../properties/PropertyCard"
 
 export const RecentProperties = () => {
