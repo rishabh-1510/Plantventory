@@ -4,6 +4,7 @@ import { Navbar } from "../components/navbar/Navbar"
 import { Button } from "../components/ui/Button"
 import { DummyProperties } from "../constants/DummyProperties"
 import { PropertyCard } from "../components/properties/PropertyCard"
+import FilterButton from "../components/marketPlace/FilterButton"
 
 const MarketPlace = () => {
     return (
@@ -14,9 +15,7 @@ const MarketPlace = () => {
                     <h2 className="text-2xl font-bold text-text md:text-3xl">
                         Explore
                     </h2>
-                    <Button variant="outline" icon={<HiOutlineAdjustmentsHorizontal size={20} />}>
-                        Filter
-                    </Button>
+                    <FilterButton/>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3 my-4">
                     {DummyProperties.map((property)=>(
